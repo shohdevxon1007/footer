@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      footer .footer-wrap {
+        display: flex;
+      }
+      .footer-wrap .footer-box:nth-child(1) {
+        max-width: 30%;
+      }
+      .footer-wrap .footer-box:nth-child(2) {
+        max-width: 70%;
+      }
+      .footer-wrap .footer-box h1 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 105px;
+        color: #1c2323;
+      }
+      .footer-wrap .footer-box p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 38px;
+        color: #486958;
+      }
+      .footer-wrap .footer-box .ch {
+        width: 150px;
+        height: 5px;
+        background: #58a9a5;
+        box-shadow: 00px 20px 0px 0px #58a9a5;
+      }
+      footer .footer-wrap .footer-box form{
+        width: 130% !important;
+        border: 1px solid #486958;
+        padding: 57px 54px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      footer .footer-wrap .footer-box input{
+        display: block;
+        border: none;
+        border-bottom: 1px solid #000000;
+        outline: none;
+        width: 100%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        color: #486958;
+        margin-top: 40px;
+        padding: 20px 0px;
+      }
+      footer .footer-wrap .footer-box input:nth-child(3){
+        border-bottom: none;
+      }
+
+      footer .footer-wrap .footer-box button{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 38px;
+        color: #FFFFFF;
+        background: #58A9A5;
+        border-radius: 20px 20px 20px 0px;
+        border: 1px solid #58A9A5;
+        padding: 15px 40px;
+        cursor: pointer;
+      }
+      footer .footer-wrap .footer-box button:hover{
+        background: #FFFFFF ;
+        color: #58A9A5;
+        border: 1px solid #58A9A5;
+        transition: .5s;
+      }
+    </style>
+    <footer>
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-box">
+            <h1>Contact Us</h1>
+            <p>
+              Have any questions? Want help <br />
+              before getting started?
+            </p>
+            <div class="ch"></div>
+          </div>
+          <div class="footer-box">
+            <form action="" method="post">
+              <input type="text" name="name" id="fullname" placeholder="Full name" required />
+              <input type="email" name="email" id="email" placeholder="Email address" required />
+              <input type="text" name="comment" id="description" placeholder="Description" required />
+              <button type="submit">Send now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
